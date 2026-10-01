@@ -46,7 +46,7 @@ ul, ol { list-style: none; }
   background:
     linear-gradient(0deg, var(--bg) 0%, rgb(10 16 15 / 0) 38%),
     linear-gradient(90deg, rgb(10 16 15 / .55) 0%, rgb(10 16 15 / 0) 60%),
-    url("assets/hero.jpg") 62% center / cover no-repeat,
+    url("assets/hero.jpg") 50% center / cover no-repeat,
     var(--bg);
 }
 .hero__in { padding-block: calc(var(--nav-h) + 24px) clamp(56px, 12vh, 112px); }
@@ -121,6 +121,12 @@ ul, ol { list-style: none; }
 
 /* 모바일 */
 @media (max-width: 767px) {
+  .hero {
+    background:
+      linear-gradient(0deg, var(--bg) 34%, rgb(10 16 15 / 0) 58%),
+      url("assets/hero.jpg") 70% 0 / auto 60% no-repeat,
+      var(--bg);
+  }
   .bento { grid-template-columns: 1fr; }
   .bento__cell--a, .bento__cell--b, .bento__cell--c, .bento__cell--d { grid-column: auto; min-height: 0; }
   .about__body { margin-left: 0; }
